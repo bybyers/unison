@@ -23,7 +23,7 @@ const heroBlock = defineType({
         description: "The anchor for the section. No hash symbols. Optional.",
       }
     ),
-    {
+    defineField({
 			title: 'Layout',
 			name: 'layout',
 			type: 'string',
@@ -34,11 +34,7 @@ const heroBlock = defineType({
 					{ title: 'Image Left', value: 'image-left' },
 				],
 			},
-		},
-    {
-      name: 'video',
-      type: 'mux.video',
-    },
+		}),
     defineField({
       name: 'image',
       type: 'defaultImage',

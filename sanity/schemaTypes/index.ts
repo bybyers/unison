@@ -12,13 +12,13 @@ import ctaBlock from './components/cta-block-schema'
 import textBlock from './components/text-block-schema'
 import imageBlock from './components/image-block-schema'
 import seo from './components/seo-schema'
+import social from './components/social-schema'
 
 // Objects
 import defaultImage from './objects/default-img-schema'
 import cta from './objects/cta-schema'
 import route from './objects/route-schema'
 import simpleText from './objects/simple-text-schema'
-import navObject from './objects/navigation-obj-schema'
 import normalText from './objects/normal-text-schema'
 
 
@@ -37,13 +37,13 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     textBlock,
     imageBlock,
     seo,
+    social,
 
     // Objects
     defaultImage,
     cta,
     route,
     simpleText,
-    navObject,
     normalText,
 
   ],

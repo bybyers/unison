@@ -10,6 +10,7 @@ const navigation = defineType({
 		defineField({
 			type: 'string',
 			name: 'title',
+      readOnly: true,
 		}),
 		defineField({
 			type: 'array',

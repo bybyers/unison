@@ -51,11 +51,5 @@ export default defineType({
       },
       hidden: ({ document }) => document?.title === 'Home',
     }),
-    {
-			name: 'pageNav',
-			title: 'Navigation',
-			group: 'seo',
-			type: 'navObject',
-		},
   ],
 })
