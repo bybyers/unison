@@ -41,14 +41,6 @@ const seo = defineType({
 					),
 			}
 		),
-    defineField(
-      {
-        title: 'Meta Icon',
-        name: 'metaIcon',
-        type: 'image',
-        description: 'This will override the default logo on the generated share graphic for the page.',
-      },
-    ),
 		defineField(
       {
         title: 'Share Graphic',

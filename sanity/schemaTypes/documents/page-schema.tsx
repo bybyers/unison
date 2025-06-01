@@ -38,7 +38,7 @@ export default defineType({
       group: 'page',
 			title: 'Page sections',
 			description: 'Add, edit, and reorder sections',
-      hidden: ({ document }) => document?.title === 'Quiz' || document?.title === 'Resources',
+      hidden: ({ document }) => document?.title === 'Home',
 		}),
     defineField({
       title: 'SEO / Share Settings',
@@ -52,4 +52,17 @@ export default defineType({
       hidden: ({ document }) => document?.title === 'Home',
     }),
   ],
+  preview: {
+		select: {
+			title: 'title',
+			slug: 'slug.current',
+		},
+		prepare(selection) {
+			const { title, slug } = selection
+			return {
+				title: title,
+				subtitle: `${slug === 'home' ? 'Home Page' : ''}`,
+			}
+		},
+	},
 })

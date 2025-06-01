@@ -1,5 +1,7 @@
 import { defineType, defineField } from "sanity";
 import { ImageIcon } from "@sanity/icons";
+import { media } from "sanity-plugin-media";
+import { title } from "process";
 
 const imageBlock = defineType({
   title: "Image Block",
@@ -15,10 +17,21 @@ const imageBlock = defineType({
       initialValue: true,
     }),
     defineField({
+      title: "Full Screen",
+      name: "fullScreen",
+      type: "boolean",
+      initialValue: false,
+    }),
+    defineField({
       title: "Anchor",
       name: "anchor",
       type: "string",
       description: "The anchor for the section. No hash symbols. Optional.",
+    }),
+    defineField({
+      title: "Title",
+      name: "title",
+      type: "string",
     }),
     defineField({
       title: "Image",
@@ -26,30 +39,18 @@ const imageBlock = defineType({
       type: "defaultImage",
       description: "Upload or select an image.",
     }),
-    defineField({
-      title: "Full Screen",
-      name: "fullScreen",
-      type: "boolean",
-      initialValue: false,
-    }),
-    defineField({
-      title: "Content",
-      name: "content",
-      type: "simpleText",
-      description: "Text content to display alongside or over the image.",
-    }),
   ],
   preview: {
     select: {
-      title: "content",
       active: "active",
+      title: "title",
+      image: "image"
     },
-    prepare({ title, active }) {
+    prepare({ active, title, image }) {
       return {
-        title: "Image Block",
-        subtitle: `${active ? "Active" : "Not Active"} - ${
-          title ? title[0]?.children[0]?.text || "No Content" : "No Content"
-        }`,
+        title: title || "Image Block",
+        subtitle: `${active ? "Active" : "Not Active"}`,
+        media: image,
       };
     },
   },
