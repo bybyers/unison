@@ -9,7 +9,7 @@ export default function Header() {
   const isHome = pathname === '/' || pathname === '/home'
 
   return (
-    <header className="relative border-b border-black py-8 flex items-center justify-center">
+    <header className="relative border-b-4 border-foreground py-8 flex items-center justify-center">
       {/* Back Arrow & Text */}
       <AnimatePresence>
         {!isHome && (
@@ -41,7 +41,7 @@ export default function Header() {
         initial={false}
         animate={
           isHome
-            ? { left: "calc(50%-75px)", x: 0, right: "auto" }
+            ? { left: "calc(50%-158px)", x: 0, right: "auto" }
             : { left: "auto", x: 0, right: "1.25rem" }
         }
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
