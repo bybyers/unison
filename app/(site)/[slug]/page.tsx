@@ -7,14 +7,14 @@ import { notFound } from "next/navigation"
 import { client } from "@/sanity/lib/client"
 
 // Types
-// import { PageType } from "@/types/documents/page-type"
+import { PageType } from "@/types/documents/page-type"
 
 // Queries
 import { PagesQuery, PageQuery } from '@/sanity/queries/documents/page-query'
 import { SiteQuery } from '@/sanity/queries/documents/site-query'
 
 // Components
-// import Page from "@/components/page-single"
+import Page from "@/components/page-single"
 import { urlFor } from "@/components/sanity-image/url"
 
 export async function generateStaticParams() {
@@ -119,7 +119,6 @@ export default async function SinglePage({ params }: { params: Promise<QueryPara
   }
 
   return (
-    // <Page page={page} key={page._id} /> 
-    <div>fu</div>
+    <Page page={page} key={page._id} /> 
   );
 }

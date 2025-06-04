@@ -10,7 +10,7 @@ import { PageQuery } from '@/sanity/queries/documents/page-query'
 import { SiteQuery } from '@/sanity/queries/documents/site-query'
 
 // Components
-import HomePage from "@/components/home-page"
+import HomePage from "@/components/page-home"
 import { urlFor } from "@/components/sanity-image/url"
 // import OrgJsonLd from "@/components/organization-jsonld"
 

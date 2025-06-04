@@ -5,6 +5,7 @@ export type ImageBlockType = {
   active?: boolean;
   componentIndex?: number;
   anchor?: string;
+  title?: string;
   image?: DefaultImageType; 
   fullScreen?: boolean; 
   content?: SimpleTextType; 

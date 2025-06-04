@@ -22,7 +22,6 @@ import simpleText from './objects/simple-text-schema'
 import normalText from './objects/normal-text-schema'
 
 
-
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
     // Documents
