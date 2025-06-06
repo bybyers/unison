@@ -15,6 +15,10 @@ export default function HomePage() {
     client.fetch(navQuery).then(setNav)
   }, [])
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <main className="flex flex-col min-h-[calc(80vh)] justify-between items-center py-12 lg:py-24 2xl:pt-48">
