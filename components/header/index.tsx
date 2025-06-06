@@ -46,7 +46,7 @@ export default function Header() {
         }
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
         className={
-          "text-5xl font-bold absolute top-1/2 -translate-y-1/2 whitespace-nowrap px-5 py-0 leading-0"
+          "text-3xl lg:text-5xl font-bold absolute top-1/2 -translate-y-1/2 whitespace-nowrap px-5 py-0 leading-0"
         }
       >
         Unison Crew
