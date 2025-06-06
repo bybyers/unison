@@ -6,6 +6,7 @@ import { client } from "@/sanity/lib/client"
 import { navQuery } from "@/sanity/queries/components/page-nav-query"
 import { Button } from "@/components/ui/button"
 import Route from "@/components/route"
+import Link from "next/link"
 
 export default function HomePage() {
   const [nav, setNav] = useState<any>(null)
@@ -16,7 +17,7 @@ export default function HomePage() {
 
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center gap-y-24 py-12 lg:py-24 2xl:pt-48">
+      <main className="flex flex-col min-h-[calc(100vh-68px)] justify-between items-center py-12 lg:py-24 2xl:pt-48">
         <section className='controller-block w-full px-5 flex justify-center'>
           <div className='w-full max-w-xl flex flex-col items-center gap-y-8'>
             {nav?.items?.length ? (
@@ -34,6 +35,12 @@ export default function HomePage() {
             )}
           </div>
         </section>
+        <div className="w-full text-center text-xs text-muted-foreground mt-8 mb-4">
+          Made with love by Jacob Byers &rarr;{" "}
+          <Link href="https://www.ohmni.tech" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary transition">
+            www.ohmni.tech
+          </Link>
+        </div>
       </main>
     </>
   )
