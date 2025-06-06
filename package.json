@@ -17,6 +17,7 @@
     "@sanity/vision": "^3.88.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "content": "link:@sanity/util/content",
     "framer-motion": "^12.16.0",
     "lucide-react": "^0.511.0",
     "next": "15.3.2",
