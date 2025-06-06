@@ -60,7 +60,7 @@ export const generateMetadata = async ({ params }: Props): Promise<Metadata> => 
 
 	return {
 		generator: 'Next.js',
-		applicationName: 'Ohmni Web Technologies',
+		applicationName: 'Unison Crew',
 		publisher: 'Ohmni LLC',
     robots: {
       index: true,
@@ -76,13 +76,13 @@ export const generateMetadata = async ({ params }: Props): Promise<Metadata> => 
       },
     },
 		metadataBase: new URL(`${process.env.NEXT_PUBLIC_SITE_URL}`),
-		title: `${result.title} :: Ohmni Web Technologies`,
+		title: `${result.title} :: Unison Crew`,
 		description: result.description,
 		openGraph: {
 			title: `${result.title}`,
 			description: result.description,
       url: new URL(`${process.env.NEXT_PUBLIC_SITE_URL}`),
-      siteName: 'Ohmni Web Technologies',
+      siteName: 'Unison Crew',
       authors: ['Jacob Byers'],
 			images: [
 				{

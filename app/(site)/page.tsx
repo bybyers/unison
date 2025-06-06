@@ -12,7 +12,7 @@ import { SiteQuery } from '@/sanity/queries/documents/site-query'
 // Components
 import HomePage from "@/components/page-home"
 import { urlFor } from "@/components/sanity-image/url"
-// import OrgJsonLd from "@/components/organization-jsonld"
+import OrgJsonLd from "@/components/organization-jsonld"
 
 export const generateMetadata = async (): Promise<Metadata> => {
 	const global = await client.fetch(SiteQuery)
@@ -26,7 +26,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
 
 	return {
 		generator: 'Next.js',
-		applicationName: 'Ohmni Web Technologies',
+		applicationName: 'Unison Crew',
 		publisher: 'Ohmni LLC',
     robots: {
       index: true,
@@ -48,7 +48,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
 			title: `${result.title}`,
 			description: result.description,
       url: new URL(`${process.env.NEXT_PUBLIC_SITE_URL}`),
-      siteName: 'Ohmni Web Technologies',
+      siteName: 'Unison Crew',
       authors: ['Jacob Byers'],
 			images: [
 				{
@@ -80,8 +80,7 @@ export default async function Home() {
 
   return (
     <>
-			{/* <OrgJsonLd /> */}
-			{/* <Page page={page} key={page._id} />  */}
+			<OrgJsonLd />
       <HomePage />
 		</>
   );

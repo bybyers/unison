@@ -56,7 +56,7 @@ const TextBlock: React.FC<TextBlockType> = ({
       >
         {content && (
           <motion.div 
-            className={`w-full max-w-2xl content`}
+            className={`w-full max-w-2xl content flex flex-col gap-y-2`}
             initial={{ 
               opacity: 0,
               scale: 0.95

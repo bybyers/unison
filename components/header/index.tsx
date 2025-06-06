@@ -9,7 +9,7 @@ export default function Header() {
   const isHome = pathname === '/' || pathname === '/home'
 
   return (
-    <header className="relative border-b-4 border-foreground py-8 flex items-center justify-center">
+    <header className="relative border-b-4 border-foreground h-16 flex items-center justify-center">
       {/* Back Arrow & Text */}
       <AnimatePresence>
         {!isHome && (
@@ -46,7 +46,7 @@ export default function Header() {
         }
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
         className={
-          "text-5xl font-bold absolute top-1/2 -translate-y-1/2 whitespace-nowrap px-5"
+          "text-5xl font-bold absolute top-1/2 -translate-y-1/2 whitespace-nowrap px-5 py-0 leading-0"
         }
       >
         Unison Crew

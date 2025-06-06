@@ -190,24 +190,33 @@
     letter-spacing: var(--tracking-normal);
   }
   h1 {
-    @apply text-4xl font-bold tracking-tight;
+    @apply text-4xl font-bold tracking-tight pb-4;
   }
   h2 {
-    @apply text-3xl font-semibold tracking-tight;
+    @apply text-3xl font-semibold tracking-tight pb-3;
   }
   h3 {
-    @apply text-2xl font-semibold tracking-tight;
+    @apply text-2xl font-semibold tracking-tight pb-2;
   }
   h4 {
-    @apply text-xl font-semibold tracking-tight;
+    @apply text-xl font-semibold tracking-tight pb-2;
   }
   h5 {
-    @apply text-lg font-semibold tracking-tight;
+    @apply text-lg font-semibold tracking-tight pb-1;
   }
   h6 {
-    @apply text-base font-semibold tracking-tight;
+    @apply text-base font-semibold tracking-tight pb-1;
   }
   p {
     @apply text-lg;
+  }
+  ol {
+    @apply text-lg list-decimal pl-6 pb-2;
+  }
+  ul {
+    @apply text-lg list-disc pl-6 pb-2;
+  }
+  li {
+    @apply text-lg pb-1;
   }
 }
