@@ -28,7 +28,7 @@ const OrgJsonLd = () => {
 						postalCode: siteData.postalCode,
 						addressRegion: siteData.addressRegion,
 					},
-					sameAs: siteData.sameAs.map((url: string) => url),
+					//sameAs: siteData.sameAs.map((url: string) => url),
 					description: siteData.seo.metaDesc,
 					'@graph': [
 						{
@@ -64,6 +64,8 @@ const OrgJsonLd = () => {
 
 		fetchData()
 	}, [])
+
+  console.log('JSON-LD Content:', jsonLdContent)
 
 	return jsonLdContent ? (
 		<Script
