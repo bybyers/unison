@@ -38,16 +38,6 @@ const TextBlock: React.FC<TextBlockType> = ({
     }
   }, [contentAlignment])
 
-  console.log('TextBlock rendered', {
-    active,
-    componentIndex,
-    anchor,
-    content,
-    contentAlignment,
-    alignmentStyles,
-    pathName
-  })
-
   if (active) {
     return (
       <section

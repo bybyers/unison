@@ -2,8 +2,8 @@ import { defineType, defineField } from "sanity";
 import React, { FC } from 'react'
 import {TextIcon} from '@sanity/icons'
 
-const smallText: FC = (props: any): JSX.Element => {
-	return <span style={{ fontSize: '14px', margin: 0 }}>{props.children} </span>
+const smallText: FC = (props: any) => {
+  return <span style={{ fontSize: '14px', margin: 0 }}>{props.children} </span>
 }
 
 const simpleText = defineType({
