@@ -9,7 +9,7 @@ export default function Header() {
   const isHome = pathname === '/' || pathname === '/home'
 
   return (
-    <header className="relative border-b-4 border-foreground h-16 flex items-center justify-center">
+    <header className="sticky top-0 z-50 border-b-4 border-foreground h-16 flex items-center justify-center bg-background">
       {/* Back Arrow & Text */}
       <AnimatePresence>
         {!isHome && (
