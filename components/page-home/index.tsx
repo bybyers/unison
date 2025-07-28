@@ -42,7 +42,7 @@ export default function HomePage() {
         <div className="w-full text-center text-xs text-muted-foreground mt-8 mb-4">
           Made with ❤️ by Jacob Byers &rarr;{" "}
           <Link href="https://www.jacobbyers.me/" className="underline hover:text-primary transition">
-            www.ohmni.tech
+            www.jacobbyers.me
           </Link>
         </div>
       </main>
