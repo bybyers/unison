@@ -35,8 +35,8 @@ const ImageBlock: React.FC<ImageBlockType> = ({
               <SanityImage
                 source={image}
                 alt={image?.alt || 'Fallback image'}
-                width={1920}
-                height={1080}
+                width={image.asset.metadata.dimensions.width}
+                height={image.asset.metadata.dimensions.height}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -73,8 +73,8 @@ const ImageBlock: React.FC<ImageBlockType> = ({
               <SanityImage
                 source={image}
                 alt={image?.alt || 'Fallback image'}
-                width={1920}
-                height={1080}
+                width={image.asset.metadata.dimensions.width}
+                height={image.asset.metadata.dimensions.height}
                 componentIndex={componentIndex}
                 className="w-full h-full object-cover"
               />

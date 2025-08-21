@@ -70,8 +70,8 @@ const NormalTextComponents = {
 								image={asset}
 								focalPoint={asset.hotspot}
 								alt={alt}
-								width={400}
-								height={900}
+								width={asset.metadata.dimensions.width}
+								height={asset.metadata.dimensions.height}
 							/>
 						</div>
 					</div>
