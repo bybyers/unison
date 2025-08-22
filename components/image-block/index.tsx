@@ -31,7 +31,7 @@ const ImageBlock: React.FC<ImageBlockType> = ({
 
           {/* Image with responsive height */}
           {image && (
-            <div className="w-full aspect-[16/9] lg:absolute lg:inset-0 lg:h-full">
+            <div className="w-full lg:absolute lg:inset-0 lg:h-full">
               <SanityImage
                 source={image}
                 alt={image?.alt || 'Fallback image'}
@@ -53,7 +53,7 @@ const ImageBlock: React.FC<ImageBlockType> = ({
         // Regular Layout
         <div className="w-full max-w-2xl flex flex-col items-center justify-center">
           <motion.div
-            className="w-full aspect-video max-w-4xl"
+            className="w-full max-w-4xl"
             initial={{
               opacity: 0,
               scale: 0.95,
